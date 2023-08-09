@@ -1,0 +1,17 @@
+{
+  "name": "short-filename",
+  "version": "1.0.0",
+  "description": "Converts a Windows path to 8.3 short filename",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.test.js"
+  },
+  "keywords": [
+    "windows",
+    "path",
+    "filename",
+    "short"
+  ],
+  "author": "Julien Vanier <jvanier@gmail.com>",
+  "license": "MIT"
+}
