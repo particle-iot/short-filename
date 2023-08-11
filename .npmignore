@@ -12,4 +12,6 @@ node_modules/
 
 # Node gyp output
 build
-prebuilds
+
+# IMPORTANT: include prebuilds in the npm package
+# prebuilds
