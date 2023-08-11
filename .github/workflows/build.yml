@@ -24,7 +24,9 @@ jobs:
           npm run prebuild
       - name: publish to npm
         shell: bash
-        run: |
-          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > $HOME/.npmrc
+          echo "Publishing as $(npm whoami)"
+          npm publish
