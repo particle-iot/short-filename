@@ -4,7 +4,8 @@
   "description": "Converts a Windows path to 8.3 short filename",
   "main": "index.js",
   "scripts": {
-    "test": "mocha index.test.js"
+    "install": "node-gyp-build",
+    "prebuild": "prebuildify --napi --strip"
   },
   "keywords": [
     "windows",
@@ -13,5 +14,12 @@
     "short"
   ],
   "author": "Julien Vanier <jvanier@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prebuildify": "^5.0.1"
+  },
+  "dependencies": {
+    "node-addon-api": "^7.0.0",
+    "node-gyp-build": "^4.6.0"
+  }
 }
